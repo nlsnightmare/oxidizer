@@ -1,0 +1,17 @@
+[package]
+name = "oxidizer"
+version = "0.1.0"
+authors = ["Nick Maroulakis <nlsnightmare@gmail.com>"]
+edition = "2018"
+
+[lib]
+name = "oxidizer"
+path = "src/lib.rs"
+
+[dependencies]
+regex = "*"
+dotenv = "*"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "0.2", features = ["full"] }
+
